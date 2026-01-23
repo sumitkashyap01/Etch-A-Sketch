@@ -13,7 +13,7 @@ A web-based Etch-A-Sketch application that allows users to draw on a grid with c
 
 ## Demo
 
-You can view a live demo of the project [https://sumitkashyap01.github.io/Etch-A-Sketch/](#).
+You can view a live demo of the project: https://sumitkashyap01.github.io/Etch-A-Sketch/
 
 ## Screenshots
 
