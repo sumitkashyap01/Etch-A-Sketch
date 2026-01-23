@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-A-Sketch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="image.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="main">
+      <header class="closed">
+        <h1 class="logo">Etch A Sketch</h1>
+        <span class="openbtn">+</span>
+        <div class="options">
+            <div class="slider">
+          <input type="range" min="8" max="96" value="16" step="8" id="slider" />
+          <p>Size:<span class="box-size-h">16</span> x <span class="box-size-w">16</span></p>
+        </div>
+        <button class="color-btn">
+          <input type="color" name="" id="color" hidden />
+          color
+        </button>
+        <button class="rainbow">Rainbow</button>
+        <button class="btn erase">Eraser</button>
+        <button class="reset">Reset</button>
+        <span class="closebtn">+</span>
+        </div>
+      </header>
+      <div class="screen">
+        <div class="container">
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(61, 56, 56);
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+header {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+}
+
+.openbtn {
+  display: none;
+}
+
+input[type = "range"] {
+    appearance: none;
+    background: #4d4445;
+}
+
+
+input[type='range']::-webkit-slider-runnable-track {
+  height: 11px;
+  border: 1px solid #4d4445;
+  border-radius: 5px;
+  background: grey;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 25px;
+  margin-top: -8px;
+  background: #3c3837;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(213, 175, 175, 0.11);
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+  color: rgb(250 151 76);
+  font-size: 4rem;
+  align-self: center;
+  font-family: "Cherry Bomb One", system-ui;
+  font-weight: 500;
+  font-style: normal;
+}
+
+header p {
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+.screen {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  height: 80%;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+button {
+  padding: 10px 50px;
+  border-radius: 40px;
+  border: none;
+  background-color: rgb(99, 90, 90);
+  color: white;
+}
+
+button:hover {
+  background-color: rgb(57, 50, 50);
+  transform: scale(1.2);
+}
+
+button:active {
+  background-color: rgb(57, 50, 50);
+  transform: scale(1.1);
+}
+
+.btn-container {
+  position: relative;
+}
+
+button.rainbowbtn {
+  padding: 10px 50px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(250, 77, 0, 1) 17%,
+    rgba(245, 208, 0, 1) 34%,
+    rgba(73, 245, 0, 1) 51%,
+    rgba(0, 106, 245, 1) 68%,
+    indigo 85%,
+    purple 100%
+  );
+  color: white;
+}
+
+button.active {
+  padding: 10px 50px;
+  background-color: rgb(58, 44, 44);
+  color: white;
+  transform: translateY(-1px);
+}
+
+.square {
+  user-select: none;
+  border: 1px solid black;
+}
+
+@media (max-width: 600px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .closed {
+    height: 13%;
+  }
+
+  .opened {
+    height: 50%;
+  }
+
+  .openbtn {
+    display: block;
+    font-size: 3rem;
+    font-weight: 900;
+    color: aliceblue;
+    text-align: center;
+  }
+
+  .closebtn {
+    transform: rotate(48deg);
+    display: block;
+    font-size: 3rem;
+    font-weight: 900;
+    color: aliceblue;
+    text-align: center;
+  }
+
+  .openbtn-hidden {
+    display: none;
+  }
+
+  .logo {
+    font-size: 3rem;
+  }
+
+  .options {
+    display: none;
+    gap: 10px;
+  }
+
+  .options-visible {
+    display: grid;
+  }
+
+  .screen {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .container {
+    width: 90%;
+    height: 70%;
+  }
+}
