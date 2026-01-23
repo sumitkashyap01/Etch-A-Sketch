@@ -29,10 +29,11 @@ You can view a live demo of the project [https://sumitkashyap01.github.io/Etch-A
 
 ##Project Structure
 
-.
+```
 ├── [index.html]      # Main HTML file
 ├── [style.css]       # Stylesheet for the project
 ├── [script.js]       # JavaScript functionality
+```
 
 Technologies Used
 - HTML5
