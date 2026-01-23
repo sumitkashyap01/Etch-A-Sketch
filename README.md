@@ -19,7 +19,7 @@ You can view a live demo of the project [https://sumitkashyap01.github.io/Etch-A
 
 <img width="1278" height="729" alt="image" src="https://github.com/user-attachments/assets/782b47ce-354c-4603-b3f3-cc824cc3c776" />
 
-##Usage
+## Usage
 
 - Use the slider to adjust the grid size.
 - Click the Color button to select a drawing color.
@@ -27,7 +27,7 @@ You can view a live demo of the project [https://sumitkashyap01.github.io/Etch-A
 - Use the Eraser to remove parts of your drawing.
 - Click Reset to clear the grid.
 
-##Project Structure
+## Project Structure
 
 ```
 ├── [index.html]      # Main HTML file
@@ -35,7 +35,7 @@ You can view a live demo of the project [https://sumitkashyap01.github.io/Etch-A
 ├── [script.js]       # JavaScript functionality
 ```
 
-Technologies Used
+## Technologies Used
 - HTML5
 - CSS3
 - JavaScript (ES6)
