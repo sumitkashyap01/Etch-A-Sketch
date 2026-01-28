@@ -62,6 +62,12 @@ const createGrids = (val) => {
     }
   });
 
+  container.addEventListener("touchstart", (e) => {
+      isDrawing = true;
+      handletouchdraw(e);
+        });
+
+
   container.addEventListener("mousemove", (e) => {
     if (isDrawing && e.target.classList.contains("square")) {
       if (isErase) {
@@ -78,6 +84,36 @@ const createGrids = (val) => {
     }
   });
 
+const handletouchdraw = (e)=>{
+e.preventDefault();
+const touch = e.touches[0];
+const elementTouched = document.elementFromPoint(touch.clientX,touch.clientY);
+if(!elementTouched || !elementTouched.classList.contains("square"))
+{ return; }
+
+if (isDrawing) {
+      if (isErase) {
+       elementTouched .style.border = "1px solid black";
+        elementTouched.style.backgroundColor = "white";
+      } else if (isRainbow) {
+        hue = (hue + 20) % 360;
+        elementTouched.style.border = "1px solid black";
+        elementTouched.style.backgroundColor = `hsl(${hue}, 100%, 50%)`;
+      } else {
+        elementTouched.style.backgroundColor = color.value;
+        elementTouched.style.border = `1px solid ${color.value}`;
+      }
+    }
+else{ return; }
+}
+container.addEventListener("touchmove", (e) => {
+handletouchdraw(e);
+      });
+
+container.addEventListener("touchend", () => {
+  isDrawing = false;
+});
+
   container.addEventListener("mouseup", () => {
     isDrawing = false;
   });
@@ -93,6 +129,7 @@ resetBtn.addEventListener("click", () => {
   const square = document.querySelectorAll(".square");
   square.forEach((s) => {
     s.style.backgroundColor = "white";
+    s.style.border = "1px solid black";
   });
 });
 
