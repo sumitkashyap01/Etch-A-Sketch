@@ -17,7 +17,7 @@ You can view a live demo of the project: https://sumitkashyap01.github.io/Etch-A
 
 ## Screenshots
 
-<img width="1278" height="729" alt="image" src="https://github.com/user-attachments/assets/782b47ce-354c-4603-b3f3-cc824cc3c776" />
+<img width="1278" height="729" alt="image" src="https://cdn.discordapp.com/attachments/1337899248028745761/1464411346996166718/Screenshot_2026-01-24_053740.png?ex=697aa4d8&is=69795358&hm=560abf146244d53e699e3c36620a9366f7697ee581ad5872071caea79ff86714&" />
 
 ## Usage
 
